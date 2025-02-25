@@ -1,0 +1,138 @@
+/* Негізгі стильдер */
+body {
+  font-family: 'Roboto', sans-serif; /* Қаріп түрін орнату */
+  background: linear-gradient(135deg, #74ABE2, #5563DE); /* Градиентті фон */
+  color: #333; /* Мәтін түсі */
+  margin: 0;
+  padding: 0;
+}
+
+/* Навигация стильдері */
+nav {
+  position: fixed; /* Навигацияны экранның жоғарғы жағына бекіту */
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9); /* Жартылай мөлдір фон */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Көлеңке қосу */
+  z-index: 100; /* Басқа элементтерден жоғары қою */
+}
+nav ul {
+  display: flex; /* Тізім элементтерін қатарға қою */
+  justify-content: center; /* Ортаға туралау */
+  list-style: none;
+  padding: 10px 0;
+}
+nav ul li {
+  margin: 0 15px; /* Элементтер арасындағы арақашықтық */
+}
+nav ul li a {
+  text-decoration: none;
+  color: #5563DE; /* Сілтеменің түсі */
+  font-weight: bold;
+}
+
+/* Header бөлімінің стильдері */
+header {
+  background: url('header-background.jpg') center/cover no-repeat; /* Фондық сурет */
+  height: 100vh; /* Экран биіктігінің 100% */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+/* Контейнер мен секциялардың стильдері */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+section {
+  padding: 40px;
+  border-bottom: 1px solid #eee;
+}
+section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #5563DE;
+}
+.bio-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%; /* Дөңгелек етіп көрсету */
+  object-fit: cover; /* Суреттің масштабын сақтау */
+}
+
+/* Footer стильдері */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #f8f8f8;
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Анимациялар */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+header h1 {
+  animation: fadeInDown 1s ease-out; /* Тақырыпты жоғарыдан анимациялау */
+}
+header p {
+  animation: fadeInUp 1s ease-out; /* Мәтінді төменнен анимациялау */
+}
+section {
+  opacity: 0; /* Бастапқыда жасырын */
+  animation: fadeInUp 1s forwards; /* Анимация арқылы көріну */
+}
+
+/* Әлеуметтік желілер түймелерінің стильдері */
+.social-buttons {
+  display: flex; /* Элементтерді қатарға қою */
+  align-items: center; /* Тік туралау */
+  gap: 20px; /* Элементтер арасындағы арақашықтық */
+  margin-top: -125px;
+  margin-left: 75px;
+  margin-bottom: -30px;
+}
+.instagram-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease; /* Анимация уақытын орнату */
+}
+.instagram-icon:hover {
+  transform: scale(1.2); /* Үлкейту эффектісі */
+}
+.telegram-icon {
+  width: 45px;
+  height: 45px;
+  transition: transform 0.3s ease;
+}
+.telegram-icon:hover {
+  transform: scale(1.2);
+}
+.text-content{
+  position: relative;
+  top: -275px;
+  margin-left: 275px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+}
+.baha{
+  position: relative;
+  top: -303px;
+  margin-left: 275px;
+  font-size: 17px;
+}
